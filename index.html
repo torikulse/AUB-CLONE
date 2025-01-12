@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="main.css" /> -->
-    <!-- <link rel="stylesheet" href="owl.carousel.min.css" /> -->
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- owl theme  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Roboto+Slab:wght@100..900&display=swap");
@@ -142,7 +156,7 @@
       <!-- logobar end -->
 
       <!-- navbar -->
-      <div class="relative flex h-[84px] justify-center pt-10">
+      <div class="relative mb-10 flex h-[84px] justify-center pt-10">
         <nav
           class="container absolute z-50 max-w-[1200px] rounded bg-white px-4"
         >
@@ -234,44 +248,40 @@
     </section>
     <!-- header end -->
     <!-- slider -->
-    <div class="container mx-auto">
-      <img
-        src="https://aub.ac.bd/media_root/herosliderbg/Web_Slider_55-min.jpg"
-        alt=""
-      />
-    </div>
-    <div class="container absolute mx-auto mt-0">
-      <div class="flex justify-between">
+    <section>
+      <div class="owl-carousel">
         <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-arrow-left-square-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"
-            />
-          </svg>
+          <img
+            src="https://aub.ac.bd/media_root/herosliderbg/new-min.jpg"
+            alt=""
+          />
         </div>
         <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-arrow-right-square-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"
-            />
-          </svg>
+          <img
+            src="https://aub.ac.bd/media_root/herosliderbg/29th_anny_2-min.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://aub.ac.bd/media_root/herosliderbg/slider_ambassador_sp_24.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://aub.ac.bd/media_root/herosliderbg/29th_anny_2-min.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://aub.ac.bd/media_root/herosliderbg/new-min.jpg"
+            alt=""
+          />
         </div>
       </div>
-    </div>
+    </section>
     <!-- slider end -->
 
     <section class="mt-32 px-4">
@@ -977,116 +987,160 @@
         </div>
       </div>
     </section>
-
+    <!-- footer  -->
     <footer class="bg-gray-800 text-white">
       <!-- menubar -->
-       <div class="container mx-auto max-w-[1200px]">
-        <div class="grid grid-cols-2 gap-6 pt-12 pb-6 md:grid-cols-10 lg:grid-cols-12">
+      <div class="container mx-auto max-w-[1200px]">
+        <div
+          class="grid grid-cols-2 gap-6 pb-6 pt-12 md:grid-cols-10 lg:grid-cols-12"
+        >
           <div class="col-span-2 md:col-span-4 lg:col-span-3">
-              <div class="flex flex-col items-start">
-                  <img src="https://aub.ac.bd/static/assets/images/aub-logo-white.png" alt="aub logo white" loading="lazy" srcset="" class="-mt-2">
-                  <div class="ml-2 mt-7 flex flex-row items-center justify-start text-gray-400">
-                      <i class="ti ti-map-pin mr-3"></i>
-                      <h4>Bangabandhu Road, Tongabari Ashulia, Dhaka</h4>
-                  </div>
-                  <div class="ml-2 mt-2 flex flex-row items-center justify-start text-gray-400">
-                      <i class="ti ti-phone mr-3"></i>
-                      <h4>+8801678664413-19</h4>
-                  </div>
-                  <div class="ml-2 mt-2 flex flex-row items-center justify-start text-gray-400">
-                      <i class="ti ti-mail mr-3"></i>
-                      <h4>info@aub.ac.bd</h4>
-                  </div>
+            <div class="flex flex-col items-start">
+              <img
+                src="https://aub.ac.bd/static/assets/images/aub-logo-white.png"
+                alt="aub logo white"
+                loading="lazy"
+                srcset=""
+                class="-mt-2"
+              />
+              <div
+                class="ml-2 mt-7 flex flex-row items-center justify-start text-gray-400"
+              >
+                <i class="ti ti-map-pin mr-3"></i>
+                <h4>Bangabandhu Road, Tongabari Ashulia, Dhaka</h4>
               </div>
+              <div
+                class="ml-2 mt-2 flex flex-row items-center justify-start text-gray-400"
+              >
+                <i class="ti ti-phone mr-3"></i>
+                <h4>+8801678664413-19</h4>
+              </div>
+              <div
+                class="ml-2 mt-2 flex flex-row items-center justify-start text-gray-400"
+              >
+                <i class="ti ti-mail mr-3"></i>
+                <h4>info@aub.ac.bd</h4>
+              </div>
+            </div>
           </div>
           <div class="col-span-1 md:col-span-2">
-              <h5 class="mb-6 text-sm font-semibold uppercase text-white">Student</h5>
-              <ul class="flex flex-col gap-1.5 text-sm text-gray-400">
-                  <li>
-                      <a href="/campus-life" class="hover:underline">Campus Life</a>
-                  </li>
-                  <li>
-                      <a href="/library" class="hover:underline">Library</a>
-                  </li>
-                  <li>
-                      <a href="https://aub.edu.bd/completed-students" target="_blank" class="hover:underline">Completed &amp; Verified Students</a>
-                  </li>
-                  <!-- <li>
-                      <a href="/undergraduates" class="hover:underline">Undergraduates</a>
-                  </li> -->
-                  <li>
-                      <a href="/rules-regulations" class="hover:underline">Rules &amp; Regulation</a>
-                  </li>
-                  <li>
-                      <a href="/tuition-fees" class="hover:underline">Tuition Fees</a>
-                  </li>
-                  <li>
-                      <a href="/waiver-and-scholarships" class="hover:underline">Waiver &amp; Scholarships</a>
-                  </li>
-              </ul>
+            <h5 class="mb-6 text-sm font-semibold uppercase text-white">
+              Student
+            </h5>
+            <ul class="flex flex-col gap-1.5 text-sm text-gray-400">
+              <li>
+                <a href="/campus-life" class="hover:underline">Campus Life</a>
+              </li>
+              <li>
+                <a href="/library" class="hover:underline">Library</a>
+              </li>
+              <li>
+                <a
+                  href="https://aub.edu.bd/completed-students"
+                  target="_blank"
+                  class="hover:underline"
+                  >Completed &amp; Verified Students</a
+                >
+              </li>
+              <li>
+                <a href="/rules-regulations" class="hover:underline"
+                  >Rules &amp; Regulation</a
+                >
+              </li>
+              <li>
+                <a href="/tuition-fees" class="hover:underline">Tuition Fees</a>
+              </li>
+              <li>
+                <a href="/waiver-and-scholarships" class="hover:underline"
+                  >Waiver &amp; Scholarships</a
+                >
+              </li>
+            </ul>
           </div>
           <div class="col-span-1 md:col-span-2">
-              <h5 class="mb-6 text-sm font-semibold uppercase text-white">University</h5>
-              <ul class="flex flex-col gap-1.5 text-sm text-gray-400">
-                  <li>
-                      <a href="/trustees" class="hover:underline">Board of Trustees</a>
-                  </li>
-                  <li>
-                      <a href="/syndicate-members" class="hover:underline">Syndicate</a>
-                  </li>
-                  <li>
-                      <a href="/notices" class="hover:underline">Notices</a>
-                  </li>
-                  <!--<li>
-                      <a href="/important-dates" class="hover:underline">Important Dates</a>
-                  </li>-->
-                  <li>
-                      <a href="/proctor" class="hover:underline">Proctor</a>
-                  </li>
-                  <li>
-                      <a href="/iqac" class="hover:underline">IQAC</a>
-                  </li>
-              </ul>
+            <h5 class="mb-6 text-sm font-semibold uppercase text-white">
+              University
+            </h5>
+            <ul class="flex flex-col gap-1.5 text-sm text-gray-400">
+              <li>
+                <a href="/trustees" class="hover:underline"
+                  >Board of Trustees</a
+                >
+              </li>
+              <li>
+                <a href="/syndicate-members" class="hover:underline"
+                  >Syndicate</a
+                >
+              </li>
+              <li>
+                <a href="/notices" class="hover:underline">Notices</a>
+              </li>
+              <li>
+                <a href="/proctor" class="hover:underline">Proctor</a>
+              </li>
+              <li>
+                <a href="/iqac" class="hover:underline">IQAC</a>
+              </li>
+            </ul>
           </div>
           <div class="col-span-1 md:col-span-2">
-              <h5 class="mb-6 text-sm font-semibold uppercase text-white">Quick Links</h5>
-              <ul class="flex flex-col gap-1.5 text-sm text-gray-400">
-                  <li>
-                      <a href="https://admission.aub.ac.bd/" class="hover:underline">Apply Online</a>
-                  </li>
-                  <!--<li>
-                      <a href="/tuition-fees-calculator" class="hover:underline">Fees Calculator</a>
-                  </li>-->
-                  <li>
-                      <a href="/contact" class="hover:underline">Contact Us</a>
-                  </li>
-                  <li>
-                      <a href="/faqs" class="hover:underline">FAQS</a>
-                  </li>
-                  <li>
-                      <a href="/transportation" class="hover:underline">Transportation</a>
-                  </li>
-                  <li>
-                      <a href="https://myasian.aub.ac.bd/" class="hover:underline">My Asian</a>
-                  </li>
-                  
-                  <li>
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSendg-CB6ILjFLFCyXeg2dhLnSrBC5sf2uoIoe5YZpAwsVJrg/viewform" class="hover:underline">Alumni Registration Link</a>
-                  </li>
-                  <li>
-                      <a href="https://drive.google.com/drive/u/6/folders/1mriELnzkdtFRM_59YCMNJ4A5rVKJCp-4" class="hover:underline">HSC Question Bank</a>
-                  </li>
-              
-              </ul>
+            <h5 class="mb-6 text-sm font-semibold uppercase text-white">
+              Quick Links
+            </h5>
+            <ul class="flex flex-col gap-1.5 text-sm text-gray-400">
+              <li>
+                <a href="https://admission.aub.ac.bd/" class="hover:underline"
+                  >Apply Online</a
+                >
+              </li>
+              <li>
+                <a href="/contact" class="hover:underline">Contact Us</a>
+              </li>
+              <li>
+                <a href="/faqs" class="hover:underline">FAQS</a>
+              </li>
+              <li>
+                <a href="/transportation" class="hover:underline"
+                  >Transportation</a
+                >
+              </li>
+              <li>
+                <a href="https://myasian.aub.ac.bd/" class="hover:underline"
+                  >My Asian</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSendg-CB6ILjFLFCyXeg2dhLnSrBC5sf2uoIoe5YZpAwsVJrg/viewform"
+                  class="hover:underline"
+                  >Alumni Registration Link</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/u/6/folders/1mriELnzkdtFRM_59YCMNJ4A5rVKJCp-4"
+                  class="hover:underline"
+                  >HSC Question Bank</a
+                >
+              </li>
+            </ul>
           </div>
           <div class="col-span-1 md:col-span-10 lg:col-span-3">
-              <h5 class="mb-6 text-sm font-semibold uppercase text-white">Location Map</h5>
-              <a href="/contact" target="_blank" class="aspect-[17/9] w-full">
-                  <img src="https://aub.ac.bd/static/assets/images/aub-map.png" alt="aub map" loading="lazy" srcset="">
-              </a>
+            <h5 class="mb-6 text-sm font-semibold uppercase text-white">
+              Location Map
+            </h5>
+            <a href="/contact" target="_blank" class="aspect-[17/9] w-full">
+              <img
+                src="https://aub.ac.bd/static/assets/images/aub-map.png"
+                alt="aub map"
+                loading="lazy"
+                srcset=""
+              />
+            </a>
           </div>
+        </div>
       </div>
-       </div>
       <!-- bottom bar -->
       <div class="bg-gray-800 text-white">
         <div class="container mx-auto flex max-w-[1200px] py-6">
@@ -1097,5 +1151,28 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          nav: true,
+          dots: true,
+          loop: true,
+        });
+      });
+    </script>
   </body>
 </html>
