@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .after-corner {
+    @apply after:absolute after:bottom-0 after:right-0 after:h-10 after:w-28 after:border-b-4 after:border-r-4 after:border-slate-200;
+  }
+  .before-corner {
+    @apply before:absolute before:left-0 before:top-0 before:h-10 before:w-28 before:border-l-4 before:border-t-4 before:border-slate-200;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Roboto+Slab:wght@100..900&display=swap");
+
+* {
+  font-family: Inter, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    Roboto Slab,
+    serif;
+  letter-spacing: 0.025em;
+}
