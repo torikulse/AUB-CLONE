@@ -14,12 +14,20 @@ $(document).ready(function () {
   });
 
   $("#events-carousel").owlCarousel({
-    items: 4,
-    margin:10,
+    items: 2,
+    margin: 10,
     nav: true,
     dots: true,
     loop: true,
+    responsive: {
+      1024: {
+        items: 3,
+        nav: false,
+      },
+      1280: {
+        items: 4,
+        nav: false,
+      },
+    },
   });
-
-
 });

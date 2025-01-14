@@ -2,28 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .after-corner {
-    @apply after:absolute after:bottom-0 after:right-0 after:h-10 after:w-28 after:border-b-4 after:border-r-4 after:border-slate-200;
+@layer base {
+  * {
+    font-family: Inter, sans-serif;
   }
-  .before-corner {
-    @apply before:absolute before:left-0 before:top-0 before:h-10 before:w-28 before:border-l-4 before:border-t-4 before:border-slate-200;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      Roboto Slab,
+      serif;
+    letter-spacing: 0.025em;
+  }
+
+  h1 {
+    @apply font-semibold;
+  }
+
+  h2 {
+    @apply text-xl font-semibold;
+  }
+
+  p {
+    @apply text-sm;
+  }
+
+  section {
+    @apply py-16;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      @apply text-2xl font-semibold;
+    }
+    h2 {
+      @apply text-2xl font-semibold;
+    }
+    p {
+      @apply text-base;
+    }
+    section {
+      @apply py-24;
+    }
+  }
+}
+
+@layer components {
+  .container-12 {
+    @apply container mx-auto max-w-[1200px] px-4;
+  }
+  .authority-corner {
+    @apply relative before:absolute before:left-0 before:top-0 before:h-10 before:w-28 before:border-l-4 before:border-t-4 before:border-slate-200 after:absolute after:bottom-0 after:right-0 after:h-10 after:w-28 after:border-b-4 after:border-r-4 after:border-slate-200;
+  }
+
+  .acnor-corner {
+    @apply relative before:absolute before:left-0 before:top-0 before:h-5 before:w-5 before:border-l before:border-t before:border-slate-200 before:transition-all after:absolute after:bottom-0 after:right-0 after:h-5 after:w-5 after:border-b after:border-r after:border-slate-200 after:transition-all hover:before:h-full hover:before:w-full hover:after:h-full hover:after:w-full;
   }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Roboto+Slab:wght@100..900&display=swap");
-
-* {
-  font-family: Inter, sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family:
-    Roboto Slab,
-    serif;
-  letter-spacing: 0.025em;
-}
