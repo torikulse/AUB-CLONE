@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="h-32 overflow-y-scroll scrollbar scrollbar-track-slate-300 scrollbar-thumb-slate-700 scrollbar-track-rounded-full scrollbar-thumb-rounded-lg"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -70,7 +73,7 @@
       <!-- topbar end -->
 
       <!-- logobar -->
-      <div class="hidden py-8 md:block">
+      <div class="hidden pt-8 md:block">
         <div class="container-12 flex items-center justify-between">
           <div>
             <img
@@ -124,205 +127,188 @@
       </div>
       <!-- logobar end -->
 
-      <!--  navbar -->
-      <div class="relative hidden justify-center pt-10 md:flex">
-        <nav class="container-12 z-10 -mt-10 md:absolute">
-          <div class="py-4">
-            <div
-              class="absolute left-0 top-0 w-full rounded bg-white px-4 py-5"
-            >
-              <ul class="flex flex-wrap items-center gap-4">
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >About AUB
-                  </a>
-                </li>
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >Admission
-                  </a>
-                </li>
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >Departments
-                  </a>
-                </li>
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >Events & Notices
-                  </a>
-                </li>
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >Administration
-                  </a>
-                </li>
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >Campus Life
-                  </a>
-                </li>
-                <li>
-                  <a class="block py-3 text-sm font-semibold uppercase" href=""
-                    >Contact</a
-                  >
-                </li>
-                <li class="ml-auto">
-                  <a
-                    href="https://myasian.aub.ac.bd/"
-                    class="block rounded border-[3px] border-emerald-500 p-0.5"
-                  >
-                    <div
-                      class="flex items-center gap-1 bg-emerald-500 px-2.5 py-1"
-                    >
-                      <img
-                        src="https://aub.ac.bd/static/assets/images/aub-single-logo.png"
-                        loading="lazy"
-                        alt="aub logo"
-                        class="mr-2 block w-5"
-                      />
-                      <span class="-mt-1 text-lg font-bold text-white"
-                        >my asian</span
-                      >
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <!-- <div id="navbar" class="z-30 h-[84px] justify-center md:relative md:flex"> -->
+      <div id="navbar" class="web--nav--container">
+        <!-- navbar menu  -->
+        <div id="navbarMenu" class="web--nav">
+          <div class="flex items-center justify-between p-6 md:hidden">
+            <img class="w-40" src="assets/image/asset 1.png" alt="" />
+            <button onclick="closemenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-x-square"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                />
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </button>
           </div>
-        </nav>
-      </div>
-      <!-- navbar end -->
-    </section>
+          <ul
+            class="container-12 flex-wrap gap-4 overflow-y-scroll h-screen md:h-auto rounded px-6 md:flex md:overflow-visible md:bg-white"
+          >
+            <li class="m--hover py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >Home</a
+              >
+            </li>
+            <li class="m--hover dropdown--container group py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >About AUB
+              </a>
+              <ul class="dropdown_ flex gap-4">
+                <ul>
+                  <h3 class="bg-[#e9f0ea] px-2 py-0.5 text-lg font-semibold">
+                    AUB
+                  </h3>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                </ul>
+                <ul>
+                  <h3 class="bg-[#e9f0ea] px-2 py-0.5 text-lg font-semibold">
+                    AUB
+                  </h3>
 
-    <!-- mobile navbar and menubar -->
-    <div>
-      <!-- mobile menu  -->
-      <div
-        class="absolute right-0 top-0 z-20 hidden w-full bg-zinc-800 text-white"
-      >
-        <div class="flex items-center justify-between p-6">
-          <img class="w-40" src="assets/image/asset 1.png" alt="" />
-          <button>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="block w-max py-2 text-sm hover:text-green-700"
+                      href=""
+                      >Dropdown 1</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li class="m--hover py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >Admission
+              </a>
+            </li>
+            <li class="m--hover py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >Departments
+              </a>
+            </li>
+            <li class="m--hover py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >Events & Notices
+              </a>
+            </li>
+            <li class="m--hover py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >Administration
+              </a>
+            </li>
+            <li class="m--hover py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >Campus Life
+              </a>
+            </li>
+            <li class="m--hover py-2 md:py-5">
+              <a class="block py-3 text-sm font-semibold uppercase" href=""
+                >Contact</a
+              >
+            </li>
+            <li class="ml-auto py-5">
+              <a
+                href="https://myasian.aub.ac.bd/"
+                class="block rounded border-[3px] border-emerald-500 p-0.5"
+              >
+                <div class="flex items-center gap-1 bg-emerald-500 px-2.5 py-1">
+                  <img
+                    src="https://aub.ac.bd/static/assets/images/aub-single-logo.png"
+                    loading="lazy"
+                    alt="aub logo"
+                    class="mr-2 block w-5"
+                  />
+                  <span class="-mt-1 text-lg font-bold text-white"
+                    >my asian</span
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- mobile toggle and logo -->
+        <div
+          class="container-12 flex h-[84px] w-full items-center justify-between bg-white py-4 md:hidden"
+        >
+          <img class="w-44" src="assets/image/asset 3.png" alt="" />
+          <!-- toggle button  -->
+          <button onclick="openmenu()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               fill="currentColor"
-              class="bi bi-x-square"
+              class="bi bi-list"
               viewBox="0 0 16 16"
             >
               <path
-                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
-              />
-              <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
               />
             </svg>
           </button>
         </div>
-        <ul class="px-6">
-          <li>
-            <a class="block py-4 text-sm font-semibold uppercase" href=""
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="flex items-center justify-between py-4 text-sm font-semibold uppercase"
-              href=""
-              >About AUB
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                />
-              </svg>
-            </a>
-            <ul class="ml-4 flex flex-col gap-4">
-              <li><a href="">Hello</a></li>
-              <li><a href="">Hello 2</a></li>
-              <li><a href="">hello 3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="block py-4 text-sm font-semibold uppercase" href=""
-              >Admission
-            </a>
-          </li>
-          <li>
-            <a class="block py-4 text-sm font-semibold uppercase" href=""
-              >Departments
-            </a>
-          </li>
-          <li>
-            <a class="block py-4 text-sm font-semibold uppercase" href=""
-              >Events & Notices
-            </a>
-          </li>
-          <li>
-            <a class="block py-4 text-sm font-semibold uppercase" href=""
-              >Administration
-            </a>
-          </li>
-          <li>
-            <a class="block py-4 text-sm font-semibold uppercase" href=""
-              >Campus Life
-            </a>
-          </li>
-          <li>
-            <a class="block py-4 text-sm font-semibold uppercase" href=""
-              >Contact</a
-            >
-          </li>
-          <li class="my-auto">
-            <a href="https://myasian.aub.ac.bd/" class="block py-4">
-              <div class="flex items-center gap-1">
-                <img
-                  src="https://aub.ac.bd/static/assets/images/aub-single-logo.png"
-                  loading="lazy"
-                  alt="aub logo"
-                  class="mr-2 block w-5"
-                />
-                <span class="-mt-1 text-lg font-bold text-white">my asian</span>
-              </div>
-            </a>
-          </li>
-        </ul>
       </div>
-      <!-- mobile navbar -->
-      <div class="container-12 flex w-full justify-between py-4 md:hidden">
-        <img class="w-44" src="assets/image/asset 3.png" alt="" />
-        <!-- toggle button  -->
-        <button class="">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            class="bi bi-list"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
+    </section>
+
     <!-- header end -->
 
     <!-- main slider -->
@@ -826,53 +812,110 @@
         </div>
         <div class="mt-8">
           <div class="owl-carousel owl-theme" id="events-carousel">
-            <div>
+            <div class="group hover:cursor-pointer">
+              <div
+                class="absolute left-0 top-0 bg-cyan-900 p-2 text-center text-white"
+              >
+                <p class="text-xs font-semibold">28 Oct</p>
+                <p class="text-xs font-semibold">2024</p>
+              </div>
               <img
                 src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
                 alt=""
               />
+
+              <div class="bg-cyan-900 p-1 text-white">
+                <h3 class="line-clamp-1 text-lg font-semibold">
+                  এর ইসলামিক স্টাডিজ বিভাগের নবীন বরন ও সাংস্কৃতিক অনুষ্ঠান
+                  -২০২৪
+                </h3>
+              </div>
+              <div
+                class="absolute top-full flex h-full w-full items-center justify-center bg-cyan-900 opacity-0 transition-all duration-500 group-hover:top-0 group-hover:opacity-100"
+              >
+                <a
+                  class="border border-white px-4 py-2 text-xs uppercase text-white"
+                  >View Deatils</a
+                >
+              </div>
             </div>
-            <div>
+            <div class="group hover:cursor-pointer">
+              <div
+                class="absolute left-0 top-0 bg-cyan-900 p-2 text-center text-white"
+              >
+                <p class="text-xs font-semibold">28 Oct</p>
+                <p class="text-xs font-semibold">2024</p>
+              </div>
               <img
                 src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
                 alt=""
               />
+
+              <div class="bg-cyan-900 p-1 text-white">
+                <h3 class="line-clamp-1 text-lg font-semibold">
+                  স্টাডিজ বিভাগের নবীন বরন ও সাংস্কৃতিক অনুষ্ঠান -২০২৪
+                </h3>
+              </div>
+              <div
+                class="absolute top-full flex h-full w-full items-center justify-center bg-cyan-900 opacity-0 transition-all duration-500 group-hover:top-0 group-hover:opacity-100"
+              >
+                <a
+                  class="border border-white px-4 py-2 text-xs uppercase text-white"
+                  >View Deatils</a
+                >
+              </div>
             </div>
-            <div>
+            <div class="group hover:cursor-pointer">
+              <div
+                class="absolute left-0 top-0 bg-cyan-900 p-2 text-center text-white"
+              >
+                <p class="text-xs font-semibold">28 Oct</p>
+                <p class="text-xs font-semibold">2024</p>
+              </div>
               <img
                 src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
                 alt=""
               />
+
+              <div class="bg-cyan-900 p-1 text-white">
+                <h3 class="line-clamp-1 text-lg font-semibold">
+                  নবীন বরন ও সাংস্কৃতিক অনুষ্ঠান -২০২৪
+                </h3>
+              </div>
+              <div
+                class="absolute top-full flex h-full w-full items-center justify-center bg-cyan-900 opacity-0 transition-all duration-500 group-hover:top-0 group-hover:opacity-100"
+              >
+                <a
+                  class="border border-white px-4 py-2 text-xs uppercase text-white"
+                  >View Deatils</a
+                >
+              </div>
             </div>
-            <div>
+            <div class="group hover:cursor-pointer">
+              <div
+                class="absolute left-0 top-0 bg-cyan-900 p-2 text-center text-white"
+              >
+                <p class="text-xs font-semibold">28 Oct</p>
+                <p class="text-xs font-semibold">2024</p>
+              </div>
               <img
                 src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
                 alt=""
               />
-            </div>
-            <div>
-              <img
-                src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="https://aub.ac.bd/media_root/events/461265468_930296612469407_4900077523831267833_n.jpg"
-                alt=""
-              />
+
+              <div class="bg-cyan-900 p-1 text-white">
+                <h3 class="line-clamp-1 text-lg font-semibold">
+                  সাংস্কৃতিক অনুষ্ঠান -২০২৪
+                </h3>
+              </div>
+              <div
+                class="absolute top-full flex h-full w-full items-center justify-center bg-cyan-900 opacity-0 transition-all duration-500 group-hover:top-0 group-hover:opacity-100"
+              >
+                <a
+                  class="border border-white px-4 py-2 text-xs uppercase text-white"
+                  >View Deatils</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -937,7 +980,7 @@
               <h1 class="text-2xl font-semibold">Important Dates</h1>
               <p>Upcoming and Recent Important dates.</p>
             </div>
-            <a class="border px-4 py-2 uppercase" href="">View all</a>
+            <a class="border px-4 py-1 text-sm uppercase" href="">View all</a>
           </div>
           <hr />
           <div class="mt-6 flex flex-col gap-6">
@@ -980,31 +1023,32 @@
     <!-- Notices End-->
     <!-- show number -->
     <section
+      id="showNumber"
       class="bg-[url('https://aub.ac.bd/static/assets/images/counter-up-bg.jpg')] bg-cover bg-center bg-no-repeat"
     >
       <div
         class="container-12 flex flex-col flex-wrap justify-center gap-12 md:flex-row"
       >
         <div class="flex flex-col items-center gap-4 text-white md:flex-row">
-          <h1 class="border-b border-orange-500 text-4xl">225</h1>
+          <h1 class="count__ border-b border-orange-500 text-4xl">1233</h1>
           <h1 class="w-min text-center text-lg font-semibold">
             PROFESSIONAL TEACHER
           </h1>
         </div>
         <div class="flex flex-col items-center gap-4 text-white md:flex-row">
-          <h1 class="border-b border-orange-500 text-4xl">225</h1>
+          <h1 class="count__ border-b border-orange-500 text-4xl">12545</h1>
           <h1 class="w-min text-center text-lg font-semibold">
             PROFESSIONAL TEACHER
           </h1>
         </div>
         <div class="flex flex-col items-center gap-4 text-white md:flex-row">
-          <h1 class="border-b border-orange-500 text-4xl">225</h1>
+          <h1 class="count__ border-b border-orange-500 text-4xl">23</h1>
           <h1 class="w-min text-center text-lg font-semibold">
             PROFESSIONAL TEACHER
           </h1>
         </div>
         <div class="flex flex-col items-center gap-4 text-white md:flex-row">
-          <h1 class="border-b border-orange-500 text-4xl">225</h1>
+          <h1 class="count__ border-b border-orange-500 text-4xl">3456</h1>
           <h1 class="w-min text-center text-lg font-semibold">
             PROFESSIONAL TEACHER
           </h1>
@@ -1250,5 +1294,80 @@
     <script src="assets/js/libs/owl.carousel.min.js"></script>
     <!-- customize owl-carousel -->
     <script src="assets/js/customs/owl.carousel.custom.js"></script>
+
+    <script>
+      const $navbar = $("#navbar");
+      const $navbarMenu = $("#navbarMenu");
+      const $showNumber = $("#showNumber");
+      const state = $navbarMenu.offset().top - $(window).scrollTop();
+
+      $(document).ready(function () {
+        function myFunction(x) {
+          if (x.matches) {
+            // If media query matches
+            $(window).on("scroll", function () {
+              // Check if the navbar has reached the top
+
+              if ($(window).scrollTop() > state) {
+                $navbar.removeClass("web--nav--container");
+                $navbar.addClass("web--nav--stiky--container");
+                $navbarMenu.removeClass("web--nav");
+                $navbarMenu.addClass("web--nav--stiky");
+              }
+
+              if ($(window).scrollTop() < state) {
+                $navbar.removeClass("web--nav--stiky--container");
+                $navbar.addClass("web--nav--container");
+                $navbarMenu.removeClass("web--nav--stiky");
+                $navbarMenu.addClass("web--nav");
+              }
+
+              console.log("show number " + $showNumber.offset().top);
+              console.log("Window " + $(window).scrollTop());
+            });
+          } else {
+            // $("body").css("background-color", "pink");
+          }
+        }
+
+        // Create a MediaQueryList object for max-width 768px
+        var x = window.matchMedia("(min-width: 768px)");
+
+        // Call listener function at run time
+        myFunction(x);
+
+        // Attach listener function on state changes
+        x.addEventListener("change", function () {
+          myFunction(x);
+        });
+      });
+
+      function closemenu() {
+        $navbarMenu.hide();
+      }
+
+      function openmenu() {
+        $navbarMenu.show();
+      }
+
+      // //counter
+      // $(".count__").each(function () {
+      //         $(this)
+      //           .prop("Counter", 0)
+      //           .animate(
+      //             {
+      //               Counter: $(this).text(),
+      //             },
+      //             {
+      //               duration: 4000,
+      //               easing: "swing",
+      //               step: function (now) {
+      //                 now = Number(Math.ceil(now)).toLocaleString("en");
+      //                 $(this).text(now);
+      //               },
+      //             },
+      //           );
+      //       });
+    </script>
   </body>
 </html>

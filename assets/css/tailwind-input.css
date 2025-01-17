@@ -57,10 +57,46 @@
   .authority-corner {
     @apply relative before:absolute before:left-0 before:top-0 before:h-10 before:w-28 before:border-l-4 before:border-t-4 before:border-slate-200 after:absolute after:bottom-0 after:right-0 after:h-10 after:w-28 after:border-b-4 after:border-r-4 after:border-slate-200;
   }
-
   .acnor-corner {
     @apply relative before:absolute before:left-0 before:top-0 before:h-5 before:w-5 before:border-l before:border-t before:border-slate-200 before:transition-all after:absolute after:bottom-0 after:right-0 after:h-5 after:w-5 after:border-b after:border-r after:border-slate-200 after:transition-all hover:before:h-full hover:before:w-full hover:after:h-full hover:after:w-full;
+  }
+  .dropdown_ {
+    @apply invisible absolute left-0 top-full bg-white px-4 opacity-0 shadow transition-all duration-300 group-hover:opacity-100 group-hover:md:visible;
+  }
+  .dropdown--container {
+    @apply relative;
+  }
+  .m--hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-emerald-700 after:transition-all after:duration-500 after:md:hover:w-full;
+  }
+  .web--nav--container {
+    @apply fixed top-0 z-20 h-[84px] w-full bg-emerald-600 md:relative;
+  }
+  .web--nav {
+    @apply absolute top-0 z-20 w-full bg-zinc-800 text-white md:mx-auto md:mt-10 md:block md:bg-transparent md:text-slate-900;
+  }
+
+  /* for sticky  */
+  .web--nav--stiky--container {
+    @apply fixed top-0 z-20 h-[84px] w-full bg-zinc-800 md:bg-white;
+  }
+  .web--nav--stiky {
+    @apply absolute top-0 z-20 w-full bg-zinc-800 text-white shadow md:mx-auto md:block md:bg-transparent md:text-slate-900;
   }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Roboto+Slab:wght@100..900&display=swap");
+
+/* custom scrollbar  */
+/* ::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 16px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+} */
