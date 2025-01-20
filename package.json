@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "tail-build": "npx tailwindcss -i ./src/assets/css/tailwind-input.css -o ./src/assets/css/main.css --watch"
+    "tail-build": "npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/main.css --watch"
   },
   "devDependencies": {
     "prettier": "^3.4.2",

@@ -73,7 +73,7 @@
     @apply fixed top-0 z-20 h-[84px] w-full bg-emerald-600 md:relative;
   }
   .web--nav {
-    @apply absolute top-0 z-20 w-full bg-zinc-800 text-white md:mx-auto md:mt-10 md:block md:bg-transparent md:text-slate-900;
+    @apply absolute top-0 z-20 hidden w-full bg-zinc-800 text-white md:mx-auto md:mt-10 md:block md:bg-transparent md:text-slate-900;
   }
 
   /* for sticky  */
@@ -81,7 +81,7 @@
     @apply fixed top-0 z-20 h-[84px] w-full bg-zinc-800 md:bg-white;
   }
   .web--nav--stiky {
-    @apply absolute top-0 z-20 w-full bg-zinc-800 text-white shadow md:mx-auto md:block md:bg-transparent md:text-slate-900;
+    @apply absolute top-0 z-20 hidden w-full bg-zinc-800 text-white shadow md:mx-auto md:block md:bg-transparent md:text-slate-900;
   }
 }
 
