@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="mx-auto max-w-7xl rounded bg-white p-6 shadow">
+      <h2 class="mb-6 text-center text-2xl font-bold">ভর্তি ফরম</h2>
+
+      <form class="grid grid-cols-2 gap-6">
+        <!-- LEFT COLUMN -->
+        <div class="space-y-4">
+          <div>
+            <label>ছাত্র/ছাত্রীর নাম</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>ছাত্র/ছাত্রীর নাম (ইংরেজিতে)</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label>শ্রেণী</label>
+              <select class="w-full rounded border p-2">
+                <option>সিলেক্ট করুন</option>
+                <option>ডেমো অপশন ১</option>
+                <option>ডেমো অপশন ২</option>
+                <option>ডেমো অপশন ৩</option>
+              </select>
+            </div>
+            <div>
+              <label>বিভাগ/শাখা</label>
+              <select class="w-full rounded border p-2">
+                <option>সিলেক্ট করুন</option>
+                <option>ডেমো অপশন ১</option>
+                <option>ডেমো অপশন ২</option>
+                <option>ডেমো অপশন ৩</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label>রোল নং</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>শাখা</label>
+            <select class="w-full rounded border p-2">
+              <option>সিলেক্ট করুন</option>
+              <option>ডেমো অপশন ১</option>
+              <option>ডেমো অপশন ২</option>
+              <option>ডেমো অপশন ৩</option>
+            </select>
+          </div>
+
+          <div>
+            <label>জন্ম তারিখ</label>
+            <input type="date" class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>পিতার নাম</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>পিতার নাম (বাংলায়)</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>পিতার জাতীয় পরিচয়পত্র নং</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>পিতার মোবাইল</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>ছাত্রের জন্ম নিবন্ধন নং</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>মাতার নাম</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>মাতার নাম (বাংলায়)</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+
+          <div>
+            <label>মাতার জাতীয় পরিচয় পত্র নং</label>
+            <input class="w-full rounded border p-2" />
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="space-y-4">
+          <!-- PHOTO UPLOAD -->
+          <div class="flex flex-col items-center">
+            <div
+              id="photoPreview"
+              class="mb-2 flex h-48 w-40 items-center justify-center overflow-hidden border bg-gray-200"
+            >
+              <img id="photoImg" src="assets/image/placeholder.png" class=" h-full w-full object-cover" />
+            </div>
+            <input
+              id="photoInput"
+              type="file"
+              accept="image/*"
+              class="w-full rounded border p-2"
+            />
+          </div>
+
+          <div>
+            <label>বিভাগ</label>
+            <select class="w-full rounded border p-2">
+              <option>সিলেক্ট করুন</option>
+              <option>ডেমো অপশন ১</option>
+              <option>ডেমো অপশন ২</option>
+              <option>ডেমো অপশন ৩</option>
+            </select>
+          </div>
+
+          <div>
+            <label>ধর্ম</label>
+            <select class="w-full rounded border p-2">
+              <option>সিলেক্ট করুন</option>
+              <option>ডেমো অপশন ১</option>
+              <option>ডেমো অপশন ২</option>
+              <option>ডেমো অপশন ৩</option>
+            </select>
+          </div>
+
+          <div>
+            <label>শিক্ষার্থীর ক্যাটাগরি</label>
+            <select class="w-full rounded border p-2">
+              <option>সিলেক্ট করুন</option>
+              <option>ডেমো অপশন ১</option>
+              <option>ডেমো অপশন ২</option>
+              <option>ডেমো অপশন ৩</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label>ট্রেজারি</label>
+              <select class="w-full rounded border p-2">
+                <option>সিলেক্ট করুন</option>
+                <option>ডেমো অপশন ১</option>
+                <option>ডেমো অপশন ২</option>
+                <option>ডেমো অপশন ৩</option>
+              </select>
+            </div>
+            <div>
+              <label>থানা</label>
+              <select class="w-full rounded border p-2">
+                <option>সিলেক্ট করুন</option>
+                <option>ডেমো অপশন ১</option>
+                <option>ডেমো অপশন ২</option>
+                <option>ডেমো অপশন ৩</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label>উপজেলা</label>
+              <select class="w-full rounded border p-2">
+                <option>সিলেক্ট করুন</option>
+                <option>ডেমো অপশন ১</option>
+                <option>ডেমো অপশন ২</option>
+                <option>ডেমো অপশন ৩</option>
+              </select>
+            </div>
+            <div>
+              <label>গ্রাম</label>
+              <input class="w-full rounded border p-2" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4">
+            <div>
+              <label>হাজিরা</label>
+              <input class="w-full rounded border p-2" />
+            </div>
+            <div>
+              <label>রোল নং</label>
+              <input class="w-full rounded border p-2" />
+            </div>
+            <div>
+              <label>পাশের বছর</label>
+              <input class="w-full rounded border p-2" />
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="mt-6 text-right">
+        <button class="rounded bg-blue-600 px-6 py-2 text-white">Submit</button>
+      </div>
+    </div>
+
+    <script>
+      const input = document.getElementById("photoInput");
+      const img = document.getElementById("photoImg");
+
+      input.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const url = URL.createObjectURL(file);
+        img.src = url;
+        img.classList.remove("hidden");
+      });
+    </script>
+  </body>
+</html>
